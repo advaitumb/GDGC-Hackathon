@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldStream | Anti-Piracy</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ ShieldStream</h1>
+        <p class="subtitle">Secure Live Segmented Transmission</p>
+
+        <section class="card sender">
+            <h2>Broadcaster (Sender)</h2>
+            <div id="drop-zone" class="drop-zone">
+                <span>Drag & Drop Match Video</span>
+                <input type="file" id="videoInput" hidden>
+            </div>
+            <button onclick="handleUpload()" class="btn-primary">Encrypt & Send</button>
+            <div id="senderLoader" class="loader"></div>
+            <p id="senderMsg"></p>
+        </section>
+
+        <section class="card receiver">
+            <h2>Legal OTT (Receiver)</h2>
+            <button onclick="handleAssemble()" class="btn-secondary">Decrypt & Reassemble</button>
+            <div id="receiverLoader" class="loader"></div>
+            <p id="receiverMsg"></p>
+        </section>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

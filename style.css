@@ -1,0 +1,8 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; color: white; display: flex; justify-content: center; padding: 20px; }
+.container { width: 100%; max-width: 600px; text-align: center; }
+.card { background: #1e293b; padding: 30px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #334155; }
+.drop-zone { border: 2px dashed #3b82f6; padding: 40px; margin: 20px 0; cursor: pointer; border-radius: 10px; }
+.btn-primary { background: #3b82f6; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; width: 100%; font-weight: bold; }
+.btn-secondary { background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; width: 100%; font-weight: bold; }
+.loader { display: none; width: 20px; height: 20px; border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; margin: 10px auto; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
